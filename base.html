@@ -1,0 +1,114 @@
+
+{% load static %}
+{# Load the tag library #}
+{% load bootstrap4%}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% bootstrap_messages %}
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+    <style>
+    .cont {margin:150px}
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'bootstrap/css/cover.css' %}" rel="stylesheet"/>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+      <div class="col-sm-4">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+        </div>
+
+       <div class="col-sm-4">
+         </div>
+        <div class="col-sm-4">
+              <form action="/html/tags/html_form_tag_action.cfm" class="form-inline">
+<label class="mr-sm-2 mb-0 sr-only" for="first_name">Username</label>
+<input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="first_name" name="first_name" placeholder="Username">
+<label class="mr-sm-2 mb-0 sr-only" for="last_name">Password</label>
+<input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="last_name" name="last_name" placeholder="Password">
+<button type="submit" class="btn btn-default mt-2 mt-sm-0">Submit</button>
+</form>
+         </div>
+
+</nav>
+<div class="container cont">
+
+  <div class="row">
+    <div class="col-sm">
+<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">Secondary card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-dark">Dark</button>
+  </div>
+</div>
+
+
+          </div>
+      <div class="col-sm">
+  <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">Success card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-dark">Dark</button>
+  </div>
+</div>
+
+
+          </div>
+      <div class="col-sm">
+<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">Info card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+   <button type="button" class="btn btn-dark">Dark</button>
+  </div>
+</div>
+
+
+          </div>
+      <div class="col-sm">
+     <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">Danger card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-dark">Dark</button>
+  </div>
+</div>
+
+          </div>
+     </div>
+
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+  {% include "js.html" %}
+  </body>
+</html>
